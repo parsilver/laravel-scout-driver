@@ -19,7 +19,7 @@ composer require farzai/laravel-scout-driver
 โดยรันคำสั่ง
 
 ```
-php artisan farzai:scout:install enterprise-search
+php artisan farzai:scout:install app-search
 ```
 หรือติดตั้งเองโดยใช้คำสั่ง
 ```

@@ -85,7 +85,7 @@ class InstallCommand extends Command
     {
         return function () {
             if (! class_exists('Elastic\EnterpriseSearch\Client')) {
-                $this->requireComposerPackages("elastic/enterprise-search");
+                $this->requireComposerPackages(['--with-all-dependencies', "elastic/enterprise-search"]);
             }
         };
     }
