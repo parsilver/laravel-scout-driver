@@ -55,7 +55,7 @@ class AppSearchDriver extends Engine
             });
 
             $this->engine->indexDocuments(
-                new Request\IndexDocuments($engineName, $documents->all())
+                new Request\IndexDocuments($engineName, $documents->values()->all())
             );
         }
     }
